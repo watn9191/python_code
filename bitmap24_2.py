@@ -44,11 +44,11 @@ Bpixel = bytearray([0x00, 0x00, 0x00])
 Wpixel = bytearray([0xff, 0xff, 0xff])
 
 for L in range(0, 1140):    # 1140 lines
-    for i in range(0, 228):
+    for i in range(0, 228):	# white
         fout.write(Wpixel)
-    for i in range(0, 456):
+    for i in range(0, 456): 	# black
         fout.write(Bpixel)
-    for i in range(0, 228):
+    for i in range(0, 228):	# white
         fout.write(Wpixel)
 
 fout.close()
